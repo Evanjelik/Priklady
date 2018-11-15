@@ -5,3 +5,7 @@ k = input("Zadaj delitela: ")
 
 v = int(n) / int(k)
 
+if float(v) is int:
+    print(n + " je mozne delit " + k)
+else:
+    print(n + " nie je delitelne " + k)
