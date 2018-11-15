@@ -1,0 +1,7 @@
+print("Overenie delitelnosti.")
+
+n = input("Zadaj cislo na delenie: ")
+k = input("Zadaj delitela: ")
+
+v = int(n) / int(k)
+
