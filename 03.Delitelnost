@@ -1,7 +1,15 @@
 print("Overenie delitelnosti.")
 
 n = input("Zadaj cislo na delenie: ")
+while not n:
+    n = input("Zadaj cislo na delenie: ")
 k = input("Zadaj delitela: ")
+
+while not k:
+    k = input("Zadaj delitela: ")
+
+if k == 0:
+    print("Nie je mozne delit nulou.")
 
 v = int(n) % int(k)
 
