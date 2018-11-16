@@ -3,11 +3,9 @@ print("Overenie delitelnosti.")
 n = input("Zadaj cislo na delenie: ")
 k = input("Zadaj delitela: ")
 
-v = int(n) / int(k)
+v = int(n) % int(k)
 
-
-
-if isinstance(v, int):
+if v == 0:
     print(n + " je mozne delit " + k)
 else:
     print(n + " nie je delitelne " + k)
