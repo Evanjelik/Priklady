@@ -9,17 +9,25 @@ while not k:
     k = input("Zadaj delitela: ")
 
 
-def nula():
-    if k ==0:
-        print("Delit nulou nejde.")
+if int(k) != 0:
+    if int(n) % int(k) == 0:
+        print(n + " je mozne delit " + k)
     else:
-        return k
-
-nula()
-
-v = int(n) % int(k)
-
-if v == 0:
-    print(n + " je mozne delit " + k)
+        print(n + " nie je delitelne " + k)
 else:
-    print(n + " nie je delitelne " + k)
+    print("Delit nulou nejde.")
+
+# def nula():
+#     if k ==0:
+#         print("Delit nulou nejde.")
+#     else:
+#         return k
+
+# nula()
+
+# v = int(n) % int(k)
+
+# if v == 0:
+#     print(n + " je mozne delit " + k)
+# else:
+#     print(n + " nie je delitelne " + k)
