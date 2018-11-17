@@ -1,22 +1,25 @@
 print("Overenie delitelnosti.")
 
 n = input("Zadaj cislo na delenie: ")
+while not n:
+    n = input("Zadaj cislo na delenie: ")
 k = input("Zadaj delitela: ")
 
-v = int(n) / int(k)
+while not k:
+    k = input("Zadaj delitela: ")
 
 
-# nie je to az taky zly napad, no da sa to ovela jednoduchsie
-if isinstance(v, int):
+def nula():
+    if k ==0:
+        print("Delit nulou nejde.")
+    else:
+        return k
+
+nula()
+
+v = int(n) % int(k)
+
+if v == 0:
     print(n + " je mozne delit " + k)
 else:
     print(n + " nie je delitelne " + k)
-
-
-# skus si pozriet, co by ti vratilo 5 % 2
-# link : https://realpython.com/python-operators-expressions/ v casti Arithmetic Operators > Modulo 
-# podobne priklady sa riesia cez to, kedze to dava jednoznacnejsi zmysel
-
-# poznamky k rieseniu :
-# - co sa stane, ak za premennu k dam nulu ? 
-# - co sa stane, ak mu odenterujem prazdny vstup ?
